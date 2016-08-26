@@ -33,3 +33,32 @@ button{
 .pd-3{
 	padding: 3%;
 }
+.pd-lados{
+	padding: 0 10%;
+}
+.p-bottom{
+	padding-bottom: 5%;
+}
+		/*Servicios*/
+span{
+	font-size: 250%;
+}
+.p{
+	display: inline-block;
+	border-radius: 50%;
+	box-shadow: 2px 2px 1px #000;
+}
+hr{
+	position: relative;
+}
+.separador{
+	position: absolute;
+	top: -87%;
+}
+		/*Video*/
+.inline{
+	display: inline-block;
+}
+.img_inline{
+	width: 40%;
+}
