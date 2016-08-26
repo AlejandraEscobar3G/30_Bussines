@@ -1,16 +1,35 @@
-*{
-	padding: 0 !important;
-	margin: 0 !important;
-}
 		/*Header*/
 header{
 	background-image: url("../image/large.jpg");
 	background-size: 100% 100%;
 }
-nav.navbar-inverse{
-	opacity: 0.6;
+.pantalla-oscura{
+	background-color: rgba(36, 35, 35, 0.7);
+}
+.pantalla-azul{
+	background-color: rgba(94, 139, 255, 0.8);
+}
+.icon-bar{
+	border: 1px solid white;
+}
+button{
+	background-color: transparent;
+	border: 2px solid white !important;
+}
+.h2{
+	margin: 0;
 }
 		/*Textos*/
 .text-white{
 	color: white;
+}
+.text-aqua{
+	color: #81CCE6;
+}
+		/*Margenes*/
+.pd{
+	padding: 0%;
+}
+.pd-3{
+	padding: 3%;
 }
