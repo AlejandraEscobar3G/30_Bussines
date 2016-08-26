@@ -2,3 +2,15 @@
 	padding: 0 !important;
 	margin: 0 !important;
 }
+		/*Header*/
+header{
+	background-image: url("../image/large.jpg");
+	background-size: 100% 100%;
+}
+nav.navbar-inverse{
+	opacity: 0.6;
+}
+		/*Textos*/
+.text-white{
+	color: white;
+}
