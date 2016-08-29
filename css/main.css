@@ -36,24 +36,27 @@ button{
 .pd-lados{
 	padding: 0 10%;
 }
-.p-bottom{
-	padding-bottom: 5%;
+.m-bottom{
+	margin-bottom: 5%;
+}
+.m-top{
+	margin-top: 4%;
 }
 		/*Servicios*/
-span{
-	font-size: 250%;
-}
 .p{
+	font-size: 130%;
 	display: inline-block;
 	border-radius: 50%;
 	box-shadow: 2px 2px 1px #000;
 }
-hr{
-	position: relative;
+.borde{
+	border-bottom: 1px solid silver;
 }
 .separador{
-	position: absolute;
-	top: -87%;
+	display: block;
+	margin: auto;
+	position: relative;
+	bottom: -50px;
 }
 		/*Video*/
 .inline{
@@ -61,4 +64,25 @@ hr{
 }
 .img_inline{
 	width: 40%;
+}
+		/*Lo que quiero*/
+.bg-section{
+	background-image: url("../image/sec-2.jpg");
+	background-size: 100% 100%;
+	height: 600px;
+}
+#pantalla-completa{
+	height: 100%;
+}
+.m-left{
+	margin: 0;
+	margin-left: -30px;
+	background-color: #81CCE6;
+}
+#regreso{
+	bottom: 50px;
+}
+		/*footer*/
+footer{
+	background-color: #293540;
 }

@@ -8,6 +8,7 @@
 	  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/queries.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<!-- HTML5 Shim and Respond.js Agrega soporte para elementos HTML5 y media quieries en IE8 -->
 	    <!-- ADVERTENCIA: Respond.js no soporta que ejecutes tu código via file:// -->
@@ -22,23 +23,25 @@
 				<div class="pantalla-oscura">
 					<div class="row">
 						<nav class="navbar">
-							<div class="col-xs-12">
+							<div class="col-xs-4 col-sm-12 col-md-4">
+								<a class="navbar-brand" href="#">
+							      	<img class="img-responsive" src="image/user-r.png" alt="logo">
+							    </a>
+							</div>
+							<div class="col-xs-8 col-sm-12 col-md-8">
 								<div class="navbar-header">
 							      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navegador">
 							        <span class="icon-bar"></span>
 							        <span class="icon-bar"></span>
 							        <span class="icon-bar"></span>
 							      </button>
-							      <a class="navbar-brand" href="#">
-							      	<img class="img-responsive" src="image/user-r.png" alt="logo">
-							      </a>
 							    </div>
 							    <div class="collapse navbar-collapse" id="navegador">
-							      <ul class="nav navbar-nav navbar-right pd">
-							        <li><a  class="text-white" href="#com"><b>¿QUE ME OFRECE?</b></a></li>
-							        <li><a class="text-white" href="#obs"><b>¿COMO FUNCIONA?</b></a></li>
-							        <li><a class="text-white" href="#mejora"><b>¿POR QUE USARLO?</b></a></li>
-							        <li><a class="text-white" href="#squad"><b>CONTACTANOS</b></a></li>
+							      <ul class="nav navbar-nav navbar-justified pd">
+							        <li><a  class="text-white" href="#ofrece"><b>¿QUE ME OFRECE?</b></a></li>
+							        <li><a class="text-white" href="#funciona"><b>¿COMO FUNCIONA?</b></a></li>
+							        <li><a class="text-white" href="#usarlo"><b>¿POR QUE USARLO?</b></a></li>
+							        <li><a class="text-white" href="#contacto"><b>CONTACTANOS</b></a></li>
 							      </ul>
 							    </div>
 							</div>
@@ -51,11 +54,44 @@
 						</div>
 					</div>
 					<div class="row pantalla-azul pd-3">
-							<div class="col-xs-6 text-right">
+							<div class="col-xs-12 col-md-6 text-center">
 								<h2 class="h2 text-white">Prueba Gratuita <br><small>Obtén un vídeo de 5 minutos</small></h2>
 							</div>
-							<div class="col-xs-6">
-								<button class="btn btn-lg text-white">Pruebalo Gratis</button>
+							<div class="col-xs-12 col-md-6 text-center">
+								<button type="button" class="btn btn-lg text-white" data-toggle="modal" data-target="#modal">Pruebalo Gratis</button>
+
+								<div class="modal fade background" id="modal" role="dialog">
+    								<div class="modal-dialog">
+							      		<!-- Contenido -->
+							      		<div class="modal-content">
+								      		<div class="modal-header">
+								          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+								          		<h4 class="modal-title">Formulario User Testing 360</h4>
+								       		</div>
+								      		<div class="modal-body">
+								          		<form>
+								          			<div>
+								          				<label>Nombre: *</label>
+								          				<input type="text" placeholder="Nombre">
+								          			</div>
+								          			<div>
+								          				<label>Email: *</label>
+								          				<input type="text" placeholder="Email">
+								          			</div>
+								          			<div>
+								          				<label>Dejame tu URL: *</label>
+								          				<input type="text" placeholder="URL">
+								          			</div>
+								          			<button type="submit" class="btn btn-lg btn-info">Enviar email</button>
+								          		</form>
+								      		</div>
+								      		<div class="modal-footer">
+								      			<span class="text-left">Powered by <u>equipo Laboratoria</u></span>
+								      			<span class="text-right"><u>Report abuse</u></span>
+								      		</div>
+							      		</div>
+						   		 	</div>
+								</div>
 							</div>
 					</div>
 				</div>
@@ -63,84 +99,139 @@
 			<section> <!-- Nuestros Servicios -->
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="text-aqua text-center pd-3">Nuestros Servicios</h2>
+						<a name="ofrece"><h2 class="text-aqua text-center pd-3">Nuestros Servicios</h2></a>
 					</div>
 				</div>
-				<div class="row p-bottom">
-					<div class="col-xs-4 text-center">
+				<div class="row m-bottom borde">
+					<div class="col-xs-12 col-sm-4 text-center">
 						<p class="pd-3  p"><span class="glyphicon glyphicon-film text-aqua"></span> </p>
 						<h3 class="text-aqua">Pruébalo gratis</h3>
 						<p class="pd-lados">Obtén un primer video screencast de un usuario navegando tu pagina</p>
 					</div>
-					<div class="col-xs-4 text-center">
+					<div class="col-xs-12 col-sm-4 text-center">
 						<p class="pd-3  p"><span class="glyphicon glyphicon-time text-aqua"></span> </p>
 						<h3 class="text-aqua">Compra el servicio</h3>
 						<p class="pd-lados">Si te gustó: compra nuestro servicio completo que incluye 7 vídeos y feedback.</p>
 					</div>
-					<div class="col-xs-4 text-center">
+					<div class="col-xs-12 col-sm-4 text-center">
 						<p class="pd-3  p"><span class="glyphicon glyphicon-list-alt text-aqua"></span> </p>
 						<h3 class="text-aqua">Obten el resultado en  1 día</h3>
 						<p class="pd-lados">Te haremos llegar los vídeos y el feedback completo el mismo día.</p>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 text-center">
-						<hr>
-						<img class="separador" src="image/separador.png" alt="separador">
-					</div>
-				</div>
+					<img class="separador" src="image/separador.png" alt="separador">
+				</div>	
 			</section>
 			<section> <!-- Video -->
-				<div class="row">
-					<div class="col-xs-6 text-right">
-						<h2 class="text-aqua inline">Ejemplo de </h2> <img class="inline img_inline" src="image/logo-2.jpg" alt="logo">
-						<p class="text-left">En este video te damos un ejemplo de un integrante de nuestro panel evaluando la experiencia de usa de<br> <i>	mimediamanzana.com</i>	<br>	 El objetivo de User Testing 360 es identificar situaciones confusas de los usuarios en su web y describir soluciones, que garanticen una experiencia de uso satisfactoria.</p>
-						<img src="image/flecha.png" alt="flecha">
+				<div class="row m-top borde">
+					<div class="col-xs-12 col-sm-6 text-center">
+						<div class="row">
+							<div class="col-xs-12">
+								<a name="funciona"><h2 class="text-aqua inline">Ejemplo de <img class="inline img_inline" src="image/logo-2.jpg" alt="logo"></h2></a> 
+								<p class="text-left pd-lados text-justify">En este video te damos un ejemplo de un integrante de nuestro panel evaluando la experiencia de usa de<br> <i class="text-aqua">	mimediamanzana.com</i>	<br>	 El objetivo de User Testing 360 es identificar situaciones confusas de los usuarios en su web y describir soluciones, que garanticen una experiencia de uso satisfactoria.</p>
+							</div>
+						</div>
+						<div class="row hidden-xs">
+							<div class="col-xs-12 text-center">
+								<img src="image/flecha.png" alt="flecha">
+							</div>
+						</div>	
 					</div>
-					<div class="col-xs-6">
-						<!-- Video -->
+					<div class="col-xs-12 col-sm-6 text-center">
+						<div class="pd-3">
+							<iframe width="80%" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section> <!-- lo que quiero -->
-				<div class="row">
-					<div class="col-xs-6">
-						<!-- img -->
+				<div class="row borde">
+					<div class="col-xs-12 col-md-6 pd">
+						<div class="bg-section">
+							<div class="pantalla-oscura" id="pantalla-completa">
+								<!-- solo esta el fondo -->
+							</div>
+						</div>
 					</div>
-					<div class="col-xs-6">
-						<!-- iconos -->
+					<div class="col-xs-12 col-md-6">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2 class="text-center pd-3">Lo que quiero ¿qué hago?</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="hidden-xs hidden-sm p m-left pd-3"><span class="glyphicon glyphicon-pencil text-white"></span></p>
+								<p class="lead text-aqua inline pd-lados">Paso 1:envíanos tu link</p>
+								<p class="text-justify pd-lados">Al darle Click al botón de prueba. Coloca tu nombre y tu correo electrónico a donde enviaremos el vídeo y el informe con el feedback. </p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="hidden-xs hidden-sm p m-left pd-3"><span class="glyphicon glyphicon-wrench text-white"></span></p> 
+								<p class="lead text-aqua inline pd-lados">Paso 2:describe a tu público objetivo.</p>
+								<p class="text-justify pd-lados">Describe las acciones que quieres que evaluemos por ejemplo: </p>
+								<ul class="pd-lados">
+									<li>A primera vista de ¿Qué crees que trata la página?</li>
+									<li>Busca el botón de inscribirte ó comprar</li>
+									<li>¿Es fácil o díficil leer los textos?</li>
+								</ul>
+								<p class="pd-lados">Puedes preguntas como las que te mostramos.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="hidden-xs hidden-sm p m-left pd-3"><span class="glyphicon glyphicon-pencil text-white"></span></p> 
+								<p class="lead text-aqua inline pd-lados">Paso 3:recibe un vídeo y el feedback completo</p>
+								<p class="text-justify pd-lados">Recibe un combo de 7 vídeos y un informe detallado con las captaciones de usabilidad de tu producto.</p>
+								<br class="visible-sm visible-xs">
+							</div>
+						</div>
 					</div>
 				</div>
+				<img class="separador" id="regreso" src="image/separador.png" alt="separador">
 			</section>
 			<section> <!-- por que usar -->
 				<div class="row">
-					<div class="col-xs-6">
-						<h2></h2> <img src="" alt="">
-						<p><i></i></p>
-						<img src="" alt="">
+					<div class="col-xs-12 col-md-6 text-center">
+								<a name="usarlo"><h2 class="text-aqua inline">Por qué usar <img class="inline img_inline" src="image/logo-2.jpg" alt="logo"></h2> </a>
+								<p class="text-left pd-lados text-justify">En la era en la que nos encontramos, la web se ha convertido en el mejor sitio para llegar a millones de personas en segundos, pero ¿qué pasa si el producto digital que ofreces no es bueno o no se entiende? Pierdes esta enorme oportunidad. Con <i class="text-aqua">User Testing 360</i>, puedes entender la experiencia de uso de tu página o producto digital y mejorarla para que satisfaga todas las necesidades de tus usuarios. Con <i class="text-aqua">User Testing 360 </i>podrás entender:</p>
+								<ul class="pd-lados text-left">
+									<li>¿Cómo tu público objetivo verdaderamente usa tu producto?</li>
+									<li>¿Qué se hace fácil o difícil al navegar en tu producto?</li>
+									<li>¿Qué es lo que tu público quiere hacer y tal vez no obtiene o consigue?</li>
+								</ul>
+								<p class="pd-lados">"<i class="text-aqua">User Testing 360</i>" te ayudará a responder estar preguntas y muchas más. Es el toque final perfecto para tu página o producto digital.</p>
 					</div>
-					<div class="col-xs-6">
-						<!-- Img -->
+					<div class="col-xs-12 col-md-6 text-center">
+						<div class="pd-3">
+							<img class="img-responsive" src="image/banner.jpg" alt="coder2">
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-6">
-						<h2>Prueba <small>gratuita</small></h2>
-					</div>
-					<div class="col-xs-6">
-						<button>Pruebalo Gratis</button>
-					</div>
+				<div class="row pantalla-azul pd-3">
+						<div class="col-xs-12 col-md-6 text-center">
+							<h2 class="h2 text-white">Prueba Gratuita <br><small>Obtén un vídeo de 5 minutos</small></h2>
+						</div>
+						<div class="col-xs-12 col-md-6 text-center">
+							<button class="btn btn-lg text-white">Pruebalo Gratis</button>
+						</div>
 				</div>
 			</section>
 			<footer> <!-- Contactanos -->
 				<div class="row">
-					<div class="col-xs-6">
-						<p></p>
+					<a name="contacto"><div class="col-xs-12 col-sm-6 pd-3">
+						<p class="text-white">Escribenos a: <br> <i class="text-aqua">experienciadeusuario.lab@gmail.com</i> <br>telef: 989637925</p>
 					</div>
-					<div class="col-xs-6">
-						<span></span><span></span>
-						<p></p>
-					</div>
+					<div class="col-xs-12 col-sm-6 pd-3">
+						<span>
+							<i class="text-aqua">
+								
+							</i><i class="text-aqua">
+								
+							</i>
+						</span>
+						<p class="text-white text-right">Copyright &copy - 2015 User Testing 360</p>
+					</div></a>
 				</div>
 			</footer>
 		</div>
