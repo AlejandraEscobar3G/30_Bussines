@@ -46,8 +46,9 @@ button{
 .p{
 	font-size: 130%;
 	display: inline-block;
-	border-radius: 50%;
-	box-shadow: 2px 2px 1px #000;
+	border-radius: 100%;
+	border: 1px solid silver;
+	box-shadow: 1px 1px 2px #000;
 }
 .borde{
 	border-bottom: 1px solid silver;
@@ -85,4 +86,16 @@ button{
 		/*footer*/
 footer{
 	background-color: #293540;
+}
+.icon-size{
+	font-size: 40px;
+}
+		/*efectos*/
+div.efec_hover:hover{	
+	background-color: #293540;
+	color: white;
+}
+		/*modal*/
+.align{
+	text-align: left !important;
 }
