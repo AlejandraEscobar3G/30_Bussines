@@ -99,3 +99,7 @@ div.efec_hover:hover{
 .align{
 	text-align: left !important;
 }
+form{
+	background-color: yellow;
+	padding: 3%;
+}
